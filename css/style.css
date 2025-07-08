@@ -13,7 +13,7 @@
 :root {
     --bg-color: #1f242d;
     --second-bg-color: #323946;
-    --main-bg-color: #5b8df8;
+    --main-color: #5b8df8;
     --white-color: #ffffff;
     --disabled-color: #fff3;
 }
@@ -55,10 +55,98 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: var(--main-bg-color)
+    color: var(--main-color)
 }
 
 #menu-icon {
     font-size: 4rem;
     display: none;
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10rem 9% 2rem;
+    background: var(--bg-color);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.home-detail h1 {
+    font-size: clamp(3.5rem, 10vw, 5.5rem);
+}
+
+.home-detail h2 {
+    display: inline-block;
+    font-size: 3.2rem;
+    margin-top: -1rem;
+}
+
+.home-detail p {
+    font-size: 1.6rem;
+    margin: 1rem 0 2.5rem;
+}
+
+.home-detail .btn-sci {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--bg-color);
+    transition: .5s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--main-color);
+    box-shadow: none;
+}
+
+.home-detail .btn-sci .sci {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.home-detail .btn-sci .sci a {
+    display: inline-flex;
+    padding: .8rem;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 0 .8rem;
+    transition: .5s;
+}
+
+.home-detail .btn-sci .sci .sci-github {
+    content: url(https://img.icons8.com/5b8df8/fluency-systems-filled/30/github.png);
+}
+
+.home-detail .btn-sci .sci .sci-github:hover {
+    background: var(--main-color);
+    content: url(https://img.icons8.com/1f242d/fluency-systems-filled/30/github.png);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.home-detail .btn-sci .sci .sci-linkedin {
+    content: url(https://img.icons8.com/5b8df8/ios-filled/30/linkedin.png);
+}
+
+.home-detail .btn-sci .sci .sci-linkedin:hover {
+    background: var(--main-color);
+    content: url(https://img.icons8.com/1f242d/ios-filled/30/linkedin.png);
+    box-shadow: 0 0 1rem var(--main-color);
 }
