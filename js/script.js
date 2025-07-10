@@ -1,10 +1,30 @@
 // Nav
 const navLinks = document.querySelectorAll('header nav a');
 const logoLink = document.querySelector('.logo');
+const sections = document.querySelectorAll('section');
 
 const activePage = () => {
+    const header = document.querySelector('header');
+    const barsBox = document.querySelector('.bars-box');
+
+    header.classList.remove('active');
+
+    setTimeout(() => {
+        header.classList.add('active');
+    }, 1000);
+
     navLinks.forEach(link => {
         link.classList.remove('active');
+    });
+
+    barsBox.classList.remove('active');
+
+    setTimeout(() => {
+        barsBox.classList.add('active');
+    }, 650);
+
+    sections.forEach(section => {
+        section.classList.remove('active');
     });
 } 
 
@@ -14,6 +34,10 @@ navLinks.forEach((link, idx) => {
             activePage();
 
             link.classList.add('active');
+
+            setTimeout(() => {
+                sections[idx].classList.add('active');
+            }, 500);
         }
     });
 });
@@ -21,7 +45,12 @@ navLinks.forEach((link, idx) => {
 logoLink.addEventListener('click', () => {
     if(!navLinks[0].classList.contains('active')) {
         activePage();
+
         navLinks[0].classList.add('active');
+
+        setTimeout(() => {
+            sections[0].classList.add('active');
+        }, 500);
     }
 });
 

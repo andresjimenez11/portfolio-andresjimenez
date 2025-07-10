@@ -39,6 +39,20 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+}
+
+header.active {
+    animation: show-header 0.6s linear forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes show-header {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 .logo {
@@ -65,12 +79,49 @@ nav a.active {
     display: none;
 }
 
+.bars-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.bars-box .bar {
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: hide-bars .35s ease-in-out both;
+    animation-delay: calc(.06s * var(--i));
+}
+
+@keyframes hide-bars {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.bars-box.active .bar {
+    animation: show-bars .35s ease-in-out both;
+    animation-delay: calc(.06s * var(--i));
+}
+
+@keyframes show-bars {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 section {
     position: absolute;
     width: 100%;
     height: 100%;
     padding: 10rem 9% 2rem;
-    background: var(--bg-color);
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
@@ -78,14 +129,25 @@ section {
     -ms-overflow-style: none; /* IE y Edge */
 }
 
+section:not(.home) {
+    padding: 14rem 9% 2rem;
+}
+
 section::-webkit-scrollbar {
     display: none; /* Chrome, Safari y Opera */
 }
 
 section.active {
-    visibility: visible;
-    opacity: 1;
-    overflow: auto;
+    animation: show-content 0.7s linear forwards;
+    animation-delay: 0.6s;
+}
+
+@keyframes show-content {
+    100% {
+        visibility: visible;
+        opacity: 1; 
+        overflow: auto;
+    }
 }
 
 /* Inicio */
@@ -111,14 +173,13 @@ section.active {
     display: inline-block;
     color: transparent;
     -webkit-text-stroke: .07rem var(--main-color);
-    animation: display-text 8s linear infinite;
+    animation: display-text 8s steps(2) infinite;
     animation-delay: calc(-4s * var(--i));
 }
 
 @keyframes display-text {
-    50%,100% {
-        display: none;
-    }
+    0%, 49.99% { display: inline-block; }
+    50%, 100% { display: none; }
 }
 
 .home-detail h2 span:before {
@@ -130,15 +191,13 @@ section.active {
     white-space: nowrap;
     overflow: hidden;
     animation: fill-text 4s linear infinite;
+    animation-delay: calc(-4s * var(--i));
 }
 
 @keyframes fill-text {
-   10%, 100% {
-    width: 0;
-   } 
-   70%, 90% {
-    width: 100%;
-   } 
+    0%, 10% { width: 0; }
+    70%, 90% { width: 100%; }
+    100% { width: 0; }
 }
 
 .home-detail p {
@@ -401,10 +460,11 @@ section.active {
 
 .resume-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     height: 45rem;
     overflow: auto;
+    max-width: 100%;
 }
 
 .resume-list::-webkit-scrollbar {
@@ -569,7 +629,7 @@ section.active {
     border-radius: .5rem;
     font-size: 1.3rem;
     font-weight: 500;
-    text-shadow: 0 0 .3rem var(--gray-color);
+    text-shadow: 2px 2px 8px #000, 0 0 2px #000;
 }
 
 .portfolio-box .live-github a {
@@ -664,6 +724,7 @@ section.active {
 }
 
 /* Lightbox para zoom de imágenes del carrusel */
+
 #lightbox-modal {
     display: none;
     position: fixed;
@@ -728,6 +789,7 @@ section.active {
 }
 
 /* Contacto */
+
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1.3fr;
@@ -754,6 +816,10 @@ section.active {
     display: flex;
     align-items: center;
     margin: 2rem 0;
+}
+
+.contact-box form {
+    margin-top: 1.6rem;
 }
 
 .contact-detail i {
