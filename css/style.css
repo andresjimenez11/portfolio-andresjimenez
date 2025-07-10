@@ -521,3 +521,79 @@ section.active {
     margin-left: 1rem;
     font-size: 1.8rem;
 }
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.portfolio-detail {
+    display: none;
+}
+
+.portfolio-detail.active {
+    display: block;
+}
+
+.portfolio-box .numb {
+    font-size: 8rem;
+    -webkit-text-stroke: .07rem var(--white-color);
+    color: transparent;
+    line-height: 1;
+}
+
+.portfolio-box h3 {
+    font-size: 3.5rem;
+    margin: .8rem 0 2rem;
+}
+
+.portfolio-box p {
+    font-size: 1.6rem;
+}
+
+.portfolio-box .tech {
+    margin: 2rem 0;
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--white-color);
+    padding-bottom: 2rem;
+}
+
+.portfolio-box .live-github a {
+    position: relative;
+    display: inline-flex;
+    padding: 1.3rem;
+    font-size: 3rem;
+    color: var(--white-color);
+    border-radius: 50%;
+    background: var(--second-bg-color);
+    margin-right: 1.5rem;
+    transition: .5s;
+}
+
+.portfolio-box .live-github a:hover {
+    color: var(--main-color);
+}
+
+.portfolio-box .live-github a span {
+    position: absolute;
+    top: -60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
+    white-space: nowrap;
+    padding: .5rem 1rem;
+    border-radius: .6rem;
+    pointer-events: none;
+    background: var(--white-color);
+    color: var(--bg-color);
+    opacity: 0;
+    scale: .9;
+    transition: .2s;
+}
+
+.portfolio-box .live-github a:hover span {
+    top: -70%;
+    opacity: 1;
+    scale: 1;
+}
