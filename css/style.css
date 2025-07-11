@@ -173,13 +173,14 @@ section.active {
     display: inline-block;
     color: transparent;
     -webkit-text-stroke: .07rem var(--main-color);
-    animation: display-text 8s steps(2) infinite;
+    animation: display-text 8s linear infinite;
     animation-delay: calc(-4s * var(--i));
 }
 
 @keyframes display-text {
-    0%, 49.99% { display: inline-block; }
-    50%, 100% { display: none; }
+    50%,100% {
+        display: none;
+    }
 }
 
 .home-detail h2 span:before {
@@ -191,13 +192,15 @@ section.active {
     white-space: nowrap;
     overflow: hidden;
     animation: fill-text 4s linear infinite;
-    animation-delay: calc(-4s * var(--i));
 }
 
 @keyframes fill-text {
-    0%, 10% { width: 0; }
-    70%, 90% { width: 100%; }
-    100% { width: 0; }
+   10%, 100% {
+    width: 0;
+   } 
+   70%, 90% {
+    width: 100%;
+   } 
 }
 
 .home-detail p {
