@@ -173,12 +173,12 @@ section.active {
     display: inline-block;
     color: transparent;
     -webkit-text-stroke: .07rem var(--main-color);
-    animation: display-text 8s linear infinite;
-    animation-delay: calc(-4s * var(--i));
+    animation: display-text 4s linear infinite;
+    animation-delay: calc(4s * var(--i));
 }
 
 @keyframes display-text {
-    50%,100% {
+    100% {
         display: none;
     }
 }
