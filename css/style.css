@@ -491,6 +491,18 @@ section.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: .2rem solid var(--second-bg-color);
+    transform: scale(.98);
+    transition: .5s;
+}
+
+.resume-list .resume-item:hover {
+    border: .2rem solid var(--main-color);
+    transform: scale(1);
+}
+
+.resume-detail.about .resume-item {
+    border: none
 }
 
 .resume-item .year {
@@ -633,6 +645,12 @@ section.active {
     font-size: 1.3rem;
     font-weight: 500;
     text-shadow: 2px 2px 8px #000, 0 0 2px #000;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.portfolio-box .tech span:hover {
+    transform: scale(1.1);
 }
 
 .portfolio-box .live-github a {
@@ -807,6 +825,10 @@ section.active {
     font-size: 4.5rem;
 }
 
+.contact-box span {
+    color: var(--main-color);
+}
+
 .contact-box p {
     font-size: 1.6rem;
 }
@@ -833,7 +855,17 @@ section.active {
     padding: 1.2rem;
     border-radius: .6rem;
     margin-right: 1.5rem;
+    transition: .5s;
 }
+
+.contact-detail:nth-of-type(1) i {
+  padding: 1.5rem;
+}
+
+.contact-detail i:hover {
+    transform: scale(1.1);
+}
+
 
 .contact-detail .detail p:first-child {
     color: var(--main-color);
