@@ -11,8 +11,8 @@
 }
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
+    --bg-color: #0c1018;
+    --second-bg-color: #1e2531;
     --main-color: #5b8df8;
     --second-color: #dbe6ff;
     --white-color: #ffffff;
@@ -457,7 +457,7 @@ section.active {
 }
 
 .resume-box .heading {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     text-align: left;
 }
 
@@ -603,7 +603,7 @@ section.active {
 .portfolio-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 5rem;
 }
 
 .portfolio-detail {
@@ -879,7 +879,7 @@ section.active {
 }
 
 .contact-box .heading {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
 }
 
 .contact-box .field-box {
