@@ -980,7 +980,7 @@ section.active {
     }
 
     .portfolio-box .portfolio-detail .live-github {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -1061,10 +1061,15 @@ section.active {
     }
 
     .contact-box form {
+        width:100%;
         padding: 2.5rem 3rem 3.5rem;
     }
 
     .contact-box h2 {
         font-size: 3.5rem;
+    }
+
+    .contact-box .field-box input {
+        width: 100%;
     }
 }
