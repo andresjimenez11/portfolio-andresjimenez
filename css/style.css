@@ -34,7 +34,7 @@ body.first {
 }
 
 body.active {
-    background: var(--white-color);
+    background: var(--second-bg-color);
 }
 
 header {

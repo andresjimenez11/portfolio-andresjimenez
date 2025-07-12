@@ -47,7 +47,7 @@ navLinks.forEach((link, idx) => {
     link.addEventListener('click', () => {
         if(!link.classList.contains('active')) {
 
-            body.classList.remove('first');
+            //body.classList.remove('first');
             body.classList.add('active');
             
             activePage();
@@ -63,6 +63,9 @@ navLinks.forEach((link, idx) => {
 
 logoLink.addEventListener('click', () => {
     if(!navLinks[0].classList.contains('active')) {
+
+        body.classList.add('active');
+        
         activePage();
 
         navLinks[0].classList.add('active');
