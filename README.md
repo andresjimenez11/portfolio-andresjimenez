@@ -37,7 +37,7 @@ Si deseas ejecutar este proyecto en tu máquina local, sigue estos pasos:
     ```
 2.  **Navega al directorio del proyecto:**
     ```bash
-    cd tu-repositorio
+    cd portfolio-andresjimenez
     ```
 3.  **Abre el archivo `index.html` en tu navegador:**
     Puedes simplemente hacer doble clic en el archivo o usar una extensión como "Live Server" en Visual Studio Code para verlo con recarga automática.
