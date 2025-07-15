@@ -1033,7 +1033,7 @@ section.active {
         overflow: visible;
     }
 
-    .resume-detail .resume-list .resume-item:last-child {
+    .resume-detail .resume-list .resume-item.skill:nth-last-child(-n+2) {
         margin-bottom: 2rem;
     }
 
