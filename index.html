@@ -10,6 +10,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="icon" href="/images/briefcase-alt.png" type="image/x-icon">
 
     <script src="https://kit.fontawesome.com/1c26ded392.js" crossorigin="anonymous"></script>
 </head>
@@ -471,7 +473,7 @@
             </div>
 
             <div class="contact-box">
-                <form id="contact-form" action="https://formsubmit.co/dd832374dfd419784b2f843b92b5d99f" method="POST">
+                <form id="contact-form" action="https://formsubmit.co/dd832374dfd419784b2f843b92b5d99f" method="POST" novalidate>
                     <h2 class="heading">Contacto</h2>
                     <div class="field-box">
                         <input type="text" name="nombre" placeholder="Nombre completo" required>
@@ -480,6 +482,8 @@
                         <input type="text" name="asunto" placeholder="Asunto" required>
                         <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
                     </div>
+
+                     <div id="form-errors" class="form-errors" style="display: none;"></div>
 
                     <button type="submit" class="btn">Enviar</button>
                 </form>
