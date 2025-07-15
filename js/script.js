@@ -44,7 +44,10 @@ const activePage = () => {
 } 
 
 navLinks.forEach((link, idx) => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (e) => {
+        
+        e.preventDefault();
+
         if(!link.classList.contains('active')) {
 
             //body.classList.remove('first');
@@ -61,7 +64,10 @@ navLinks.forEach((link, idx) => {
     });
 });
 
-logoLink.addEventListener('click', () => {
+logoLink.addEventListener('click', (e) => {
+
+    e.preventDefault();
+    
     if(!navLinks[0].classList.contains('active')) {
 
         body.classList.add('active');
