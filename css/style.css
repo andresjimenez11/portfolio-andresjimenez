@@ -931,6 +931,7 @@ section.active {
 /* formulario alertas */
 
 .form-errors {
+    display: none;
     background-color: #c0392b;
     color: white;
     padding: 1rem;
