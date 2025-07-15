@@ -15,6 +15,7 @@
     --second-bg-color: #1e2531;
     --main-color: #5b8df8;
     --second-color: #dbe6ff;
+    --third-color: #142446;
     --white-color: #ffffff;
     --gray-color: #747474;
     --disabled-color: #fff3;
@@ -503,6 +504,10 @@ section.active {
     border: .2rem solid var(--second-bg-color);
     transform: scale(.98);
     transition: .5s;
+}
+
+.resume-list .resume-item.second {
+    background: var(--third-color);
 }
 
 .resume-list .resume-item:hover {
