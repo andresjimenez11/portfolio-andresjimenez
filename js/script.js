@@ -187,3 +187,47 @@ carouselImgs.forEach(img => {
     img.style.cursor = 'zoom-in';
     img.addEventListener('click', () => openLightbox(img.src));
 });
+
+// Validaciones formulario
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Evita que se envíe el formulario
+
+        const nombre = form.querySelector('input[placeholder="Nombre completo"]');
+        const email = form.querySelector('input[placeholder="Email"]');
+        const telefono = form.querySelector('input[placeholder="Teléfono"]');
+        const asunto = form.querySelector('input[placeholder="Asunto"]');
+        const mensaje = form.querySelector('textarea');
+
+        let errores = [];
+
+        // Validación básica
+        if (nombre.value.trim().length < 3) {
+            errores.push("El nombre debe tener al menos 3 caracteres.");
+        }
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+            errores.push("El correo electrónico no es válido.");
+        }
+
+        if (!/^[0-9]{7,}$/.test(telefono.value)) {
+            errores.push("El teléfono debe contener al menos 7 dígitos.");
+        }
+
+        if (asunto.value.trim().length < 3) {
+            errores.push("El asunto es muy corto.");
+        }
+
+        if (mensaje.value.trim().length < 10) {
+            errores.push("El mensaje debe tener al menos 10 caracteres.");
+        }
+
+        if (errores.length > 0) {
+            alert("Corrige los siguientes errores:\n\n" + errores.join("\n"));
+        } else {
+            form.reset(); // Limpia los campos
+        }
+    });
+});

@@ -51,7 +51,7 @@
             </h2>
             <p>¡Hola! Soy estudiante de Ingeniería de Software próximo a graduarse con experiencia en desarrollo web, móvil e industrial. Aplico buenas prácticas, trabajo colaborativo y construyo soluciones eficientes que aportan valor.</p>
             <div class="btn-sci">
-                <a href="#" class="btn">Descargar HV</a>
+                <a href="assets/HV-Andres-Felipe-Jimenez.pdf" class="btn" download>Descargar HV</a>
                 <div class="sci">
                     <a href="https://github.com/andresjimenez11" target="_blank" class="sci-github"></a>
                     <a href="#" class="sci-linkedin"></a>
@@ -471,14 +471,14 @@
             </div>
 
             <div class="contact-box">
-                <form action="">
+                <form id="contact-form" action="https://formsubmit.co/dd832374dfd419784b2f843b92b5d99f" method="POST">
                     <h2 class="heading">Contacto</h2>
                     <div class="field-box">
-                        <input type="text" placeholder="Nombre completo" required>
-                        <input type="text" placeholder="Email" required>
-                        <input type="text" placeholder="Teléfono" required>
-                        <input type="text" placeholder="Asunto" required>
-                        <textarea name="" id="" placeholder="Tu mensaje" required></textarea>
+                        <input type="text" name="nombre" placeholder="Nombre completo" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="text" name="telefono" placeholder="Teléfono" required>
+                        <input type="text" name="asunto" placeholder="Asunto" required>
+                        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
                     </div>
 
                     <button type="submit" class="btn">Enviar</button>
