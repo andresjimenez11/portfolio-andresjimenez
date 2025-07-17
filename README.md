@@ -1,48 +1,48 @@
-# Portafolio Personal - Andrés F. Jiménez
+# Personal Portfolio - Andrés F. Jiménez
 
-¡Hola! 👋 Este es el código fuente de mi portafolio personal, una página web de una sola página (SPA) diseñada para mostrar mi perfil profesional, proyectos, experiencia y habilidades como desarrollador de software.
+Hello! 👋 This is the source code of my personal portfolio, a single-page website (SPA) designed to showcase my professional profile, projects, experience, and skills as a software developer.
 
-## ✨ Demo en Vivo
+## ✨ Live Demo
 
-Puedes ver el portafolio en acción aquí: [Enlace al Portafolio](https://portfolio-andresjimenez.netlify.app/)
+You can see the portfolio in action here: [Portfolio Link](https://portfolio-andresjimenez.netlify.app/)
 
-## 🚀 Características
+## 🚀 Features
 
-*   **Sección de Inicio:** Presentación con un resumen profesional y enlaces a mi HV y perfiles sociales.
-*   **Servicios:** Descripción de mis competencias en desarrollo frontend, backend, móvil, bases de datos, análisis de datos y despliegue en la nube.
-*   **Resumen:** Una sección interactiva que detalla mi experiencia laboral, formación académica, habilidades técnicas y un poco más sobre mí.
-*   **Portafolio:** Un carrusel para mostrar mis proyectos más recientes con descripciones y enlaces a sus repositorios.
-*   **Formulario de Contacto:** Un formulario funcional (usando FormSubmit) para que los visitantes puedan ponerse en contacto conmigo directamente.
-*   **Diseño Responsivo:** Totalmente adaptable a dispositivos móviles y de escritorio.
+*   **Home Section:** Introduction with a professional summary and links to my CV and social profiles.
+*   **Services:** Description of my competencies in frontend, backend, mobile development, databases, data analysis, and cloud deployment.
+*   **Resume:** An interactive section detailing my work experience, academic background, technical skills, and a bit more about me.
+*   **Portfolio:** A carousel to showcase my most recent projects with descriptions and links to their repositories.
+*   **Contact Form:** A functional form (using FormSubmit) for visitors to get in touch with me directly.
+*   **Responsive Design:** Fully adaptable to mobile and desktop devices.
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
 *   **Frontend:**
     *   HTML5
-    *   CSS3 (con variables y animaciones)
+    *   CSS3 (with variables and animations)
     *   JavaScript (Vanilla)
-*   **Iconos:**
+*   **Icons:**
     *   [Boxicons](https://boxicons.com/)
     *   [Font Awesome](https://fontawesome.com/)
-*   **Servicio de Formulario:**
+*   **Form Service:**
     *   [FormSubmit](https://formsubmit.co/)
 
-## 🔧 Instalación y Uso Local
+## 🔧 Installation and Local Use
 
-Si deseas ejecutar este proyecto en tu máquina local, sigue estos pasos:
+If you want to run this project on your local machine, follow these steps:
 
-1.  **Clona el repositorio:**
+1.  **Clone the repository:**
     ```bash
     git clone https://github.com/andresjimenez11/portfolio-andresjimenez.git
     ```
-2.  **Navega al directorio del proyecto:**
+2.  **Navigate to the project directory:**
     ```bash
     cd portfolio-andresjimenez
     ```
-3.  **Abre el archivo `index.html` en tu navegador:**
-    Puedes simplemente hacer doble clic en el archivo o usar una extensión como "Live Server" en Visual Studio Code para verlo con recarga automática.
+3.  **Open the `index.html` file in your browser:**
+    You can simply double-click the file or use an extension like "Live Server" in Visual Studio Code to view it with auto-reloading.
 
-## 📬 Contacto
+## 📬 Contact
 
 *   **Email:** andresjs1125@outlook.es
 *   **LinkedIn:** [andresfjimenez11](https://www.linkedin.com/in/andresfjimenez11/)
