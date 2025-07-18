@@ -127,22 +127,18 @@ const activePortfolio = () => {
 }
 
 arrowRight && arrowRight.addEventListener('click', () => {
-    if (index < 2) {
+    if (index < 1) {
         index++;
         arrowLeft.classList.remove('disabled');
-    } else {
-        index = 3;
         arrowRight.classList.add('disabled');
     }
     activePortfolio();
 });
 
 arrowLeft && arrowLeft.addEventListener('click', () => {
-    if (index > 1) {
+    if (index = 1) {
         index--;
         arrowRight.classList.remove('disabled');
-    } else {
-        index = 0;
         arrowLeft.classList.add('disabled');
     }
     activePortfolio();
