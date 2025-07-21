@@ -559,7 +559,7 @@ section.active {
     position: relative;
     align-items: center;
     height: auto;
-
+    color: var(--white-color);
 }
 
 .resume-detail.skills .resume-item i {
@@ -967,14 +967,29 @@ section.active {
     }
 }
 
-@media screen and (max-width: 840px) {
-    .contact-box .field-box {
-        grid-template-columns: 1fr;
-    }
+@media screen and (max-width: 840px) {    
     .home {
     flex-direction: column-reverse;
     justify-content: center;
     gap: 2rem;
+    }
+
+    .home-detail,
+    .resume-box h2,
+    .resume-box .heading,
+    .resume-box .desc,
+    .resume-detail .desc,
+    .resume-detail.about .resume-list {
+        text-align: center;
+    }
+
+    .home-detail .btn-sci {
+        flex-direction: column-reverse;
+    }
+
+    .home-detail .btn-sci .sci {
+        margin-left: 0;
+        margin-bottom: 2rem;
     }
 
     .home-img .img-box {
@@ -987,13 +1002,13 @@ section.active {
         width: 35rem;
         height: 35rem;
     }
+
     .resume-container,
     .portfolio-container,
     .contact-container {
         display: grid;
         grid-template-columns: 1fr;
     }
-
     .resume-container {
         gap: 3rem;
     }
@@ -1008,6 +1023,10 @@ section.active {
 
     .portfolio-box .portfolio-detail .live-github {
         margin-bottom: 2rem;
+    }
+
+    .contact-box .field-box {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1067,24 +1086,6 @@ section.active {
 @media screen and (max-width: 450px) {
     html {
         font-size: 50%;
-    }
-
-    .home-detail,
-    .resume-box h2,
-    .resume-box .heading,
-    .resume-box .desc,
-    .resume-detail .desc,
-    .resume-detail.about .resume-list {
-        text-align: center;
-    }
-
-    .home-detail .btn-sci {
-        flex-direction: column-reverse;
-    }
-
-    .home-detail .btn-sci .sci {
-        margin-left: 0;
-        margin-bottom: 2rem;
     }
 
     .contact-box form {
