@@ -1,0 +1,22 @@
+{
+  "es": {
+    "inicio": "Inicio",
+    "perfil": "Perfil Profesional",
+    "servicios": "Servicios",
+    "portafolio": "Portafolio",
+    "contacto": "Contacto",
+    "bienvenida": "Bienvenido a mi portafolio",
+    "descripcion": "¡Hola! Soy desarrollador Full Stack y estudiante de Ingeniería de Software en etapa final. Tengo experiencia en desarrollo web, móvil e industrial, aplicando buenas prácticas y creando soluciones funcionales y escalables.",
+    "descargarHV": "Descargar HV"
+  },
+  "en": {
+    "inicio": "Home",
+    "perfil": "Professional Profile",
+    "servicios": "Services",
+    "portafolio": "Portfolio",
+    "contacto": "Contact",
+    "bienvenida": "Welcome to my portfolio",
+    "descripcion": "Hello! I'm a Full Stack developer and a Software Engineering student in the final stage of my studies. I have experience in web, mobile, and industrial development, applying best practices and creating functional and scalable solutions.",
+    "descargarHV": "Download CV"
+  }
+}
