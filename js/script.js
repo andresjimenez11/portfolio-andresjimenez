@@ -83,7 +83,6 @@ logoLink.addEventListener('click', (e) => {
 });
 
 // Funcionalidad Resumen
-
 const resumeBtns = document.querySelectorAll('.resume-btn');
 
 resumeBtns.forEach((btn, idx) => {
@@ -252,3 +251,26 @@ document.addEventListener('DOMContentLoaded', () => {
         container.classList.toggle("show", errores.length > 0);
     }
 });
+
+// Agregar funcionalidad traduccción
+let currentLang = 'es';
+
+document.getElementById('lang-toggle').addEventListener('click', () => {
+    currentLang = currentLang === 'es' ? 'en' : 'es';
+    loadLanguage(currentLang);
+    document.getElementById('lang-toggle').textContent = currentLang === 'es' ? 'EN' : 'ES';
+});
+
+function loadLanguage(lang) {
+    fetch('lang/lang.json')
+        .then(res => res.json())
+        .then(data => {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (data[lang][key]) {
+                    el.textContent = data[lang][key];
+                }
+            });
+        });
+}
