@@ -5,9 +5,14 @@
     "services": "Servicios",
     "portfolio": "Portafolio",
     "contact": "Contacto",
-    "welcome": "Bienvenido a mi portafolio",
-    "description": "¡Hola! Soy desarrollador Full Stack y estudiante de Ingeniería de Software en etapa final. Tengo experiencia en desarrollo web, móvil e industrial, aplicando buenas prácticas y creando soluciones funcionales y escalables.",
-    "downloadHV": "Descargar HV"
+
+    "home.name": "Andrés Jiménez",
+    "home.presentation": "Soy ",
+    "home.profesion": "Desarrollador",
+    "home.description": "¡Hola! Soy desarrollador Full Stack y estudiante de Ingeniería de Software en etapa final. Tengo experiencia en desarrollo web, móvil e industrial, aplicando buenas prácticas y creando soluciones funcionales y escalables.",
+    "home.downloadCV": "Descargar HV"
+
+    
   },
   "en": {
     "home": "Home",
@@ -15,8 +20,11 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "contact": "Contact",
-    "welcome": "Welcome to my portfolio",
-    "description": "Hello! I'm a Full Stack developer and a Software Engineering student in the final stage of my studies. I have experience in web, mobile, and industrial development, applying best practices and creating functional and scalable solutions.",
-    "downloadHV": "Download CV"
+
+    "home.name": "Andrés Jiménez",
+    "home.presentation": "I'm a ",
+    "home.profesion": "Developer",
+    "home.description": "Hi! I’m a Full Stack Developer and final-year Software Engineering student with experience in web, mobile, and industrial development, focused on building scalable and functional solutions.",
+    "home.downloadCV": "Download CV"
   }
 }

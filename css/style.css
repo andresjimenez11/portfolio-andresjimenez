@@ -71,12 +71,19 @@ header.active {
     font-weight: 700;
 }
 
-nav a {
+nav a,
+nav button {
     font-size: 2rem;
     color: var(--white-color);
     font-weight: 500;
     margin-left: 3.5rem;
     transition: .5s;
+}
+
+nav button {
+    background: none;
+    transition: none;
+    transform: translateY(1.3px);
 }
 
 nav a:hover,
@@ -178,7 +185,7 @@ section.active {
     margin-top: -1rem;
 }
 
-.home-detail h2 span {
+.home-detail h2 span:not(.home-presentation) {
     position: relative;
     display: inline-block;
     color: transparent;
@@ -1055,6 +1062,12 @@ section.active {
     nav a {
         display: block;
         margin: 4rem 0;
+    }
+
+    nav button {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 2rem;
     }
 
     .contact-box .field-box {

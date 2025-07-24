@@ -269,7 +269,13 @@ function loadLanguage(lang) {
             elements.forEach(el => {
                 const key = el.getAttribute('data-i18n');
                 if (data[lang][key]) {
-                    el.textContent = data[lang][key];
+                    // Si el elemento tiene data-text (como el span animado), lo actualizamos con setAttribute
+                    if (el.hasAttribute('data-text')) {
+                        el.setAttribute('data-text', data[lang][key]);
+                        el.textContent = data[lang][key]; // opcional, si quieres que también cambie el texto visible
+                    } else {
+                        el.textContent = data[lang][key];
+                    }
                 }
             });
         });
