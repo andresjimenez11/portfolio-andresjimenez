@@ -10,9 +10,21 @@
     "home.presentation": "Soy ",
     "home.profesion": "Desarrollador",
     "home.description": "¡Hola! Soy desarrollador Full Stack y estudiante de Ingeniería de Software en etapa final. Tengo experiencia en desarrollo web, móvil e industrial, aplicando buenas prácticas y creando soluciones funcionales y escalables.",
-    "home.downloadCV": "Descargar HV"
+    "home.downloadCV": "Descargar HV",
 
-    
+    "resume.profile": "Perfil ",
+    "resume.profesional": "Profesional",
+    "resume.aboutme": "Sobre mí",
+    "resume.experience": "Experiencia",
+    "resume.education": "Educación",
+    "resume.skills": "Habilidades",
+
+    "resume.about": "Sobre",
+    "resume.me": "Mí",
+    "resume.aboutme.p1": "Soy Andrés Felipe Jiménez, un Desarrollador Full Stack y estudiante de último semestre de Ingeniería de Software. Mi pasión es crear soluciones tecnológicas eficientes y escalables que generen un impacto positivo.",
+    "resume.aboutme.p2": "Me defino como una persona disciplinada, creativa y orientada al trabajo en equipo. Mi curiosidad por aprender constantemente me impulsa a mantenerme actualizado con las últimas tendencias y tecnologías, aplicando siempre un enfoque innovador para resolver desafíos.",
+    "resume.aboutme.p3": "Fuera del ámbito profesional, disfruto del ciclismo, baloncesto y el fútbol, actividades que me enseñan la importancia de la perseverancia y el trabajo duro. Compartir tiempo con mi familia es fundamental para mi bienestar y recargar energías.",
+    "resume.aboutme.p4": "Mi objetivo es consolidarme como un ingeniero de software que no solo construya código, sino que aporte valor significativo a la industria y a la comunidad, asumiendo nuevos desafíos para crecer profesionalmente."
   },
   "en": {
     "home": "Home",
@@ -25,6 +37,21 @@
     "home.presentation": "I'm a ",
     "home.profesion": "Developer",
     "home.description": "Hi! I’m a Full Stack Developer and final-year Software Engineering student with experience in web, mobile, and industrial development, focused on building scalable and functional solutions.",
-    "home.downloadCV": "Download CV"
+    "home.downloadCV": "Download CV",
+
+    "resume.profile": "Professional ",
+    "resume.profesional": "Profile",
+    "resume.aboutme": "About Me",
+    "resume.experience": "Experience",
+    "resume.education": "Education",
+    "resume.skills": "Skills",
+
+    "resume.about": "About",
+    "resume.me": "Me",
+    "resume.aboutme.p1": "I am Andrés Felipe Jiménez, a Full Stack Developer and a final-semester Software Engineering student. My passion is to create efficient and scalable technological solutions that generate a positive impact.",
+    "resume.aboutme.p2": "I define myself as a disciplined, creative person with a strong focus on teamwork. My constant curiosity to learn drives me to stay updated with the latest trends and technologies, always applying an innovative approach to tackle challenges.",
+    "resume.aboutme.p3": "Outside the professional sphere, I enjoy cycling, basketball, and soccer—activities that teach me the importance of perseverance and hard work. Spending time with my family is essential for my well-being and to recharge.",
+    "resume.aboutme.p4": "My goal is to establish myself as a software engineer who not only writes code but contributes meaningful value to the industry and community, embracing new challenges to grow professionally."
+    
   }
 }
