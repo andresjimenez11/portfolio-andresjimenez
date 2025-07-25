@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Andrés F. Jiménez</title>
+    <title data-i18n="title">Portafolio - Andrés F. Jiménez</title>
 
-    <!-- Boxicons -->
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     
     <link rel="icon" href="/images/briefcase-alt.png" type="image/x-icon">
@@ -17,14 +15,11 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header class="active">
-        <!-- Logo -->
         <a href="#" class="logo">Andrés.</a>
 
         <i class='bx  bx-menu' id="menu-icon"></i> 
 
-        <!-- Navbar -->
         <nav>
             <a href="#" class="active" data-i18n="home">Inicio</a>
             <a href="#" data-i18n="profile">Perfil Profesional</a>
@@ -35,7 +30,6 @@
         </nav>
     </header>
 
-    <!-- Fondo Barras -->
     <div class="bars-box active">
         <div class="bar" style="--i:6;"></div>
         <div class="bar" style="--i:5;"></div>
@@ -45,7 +39,6 @@
         <div class="bar" style="--i:1;"></div>
     </div>
 
-    <!-- inicio sección -->
     <section class="home active" id="home">
         <div class="home-detail">
             <h1 data-i18n="home.name">Andrés Jiménez</h1>
@@ -72,14 +65,13 @@
         </div>
     </section>
 
-    <!-- Resumen sección -->
     <section class="resume">
         <div class="resume-container">
             <div class="resume-box">
                 <h2 class="heading">
-                    <span class="resume.profile" data-i18n="resume.profile">Perfil </span>
+                    <span class="span-styling-exception" data-i18n="resume.profile">Perfil </span>
                     <span data-i18n="resume.profesional">Profesional</span></h2>
-                <p class="desc">Este es un vistazo general a mi perfil: experiencia, estudios, habilidades y más sobre mí.</p>
+                <p class="desc" data-i18n="resume.description">Este es un vistazo general a mi perfil: experiencia, estudios, habilidades y más sobre mí.</p>
                 <button class="resume-btn active" data-i18n="resume.aboutme">Sobre mí</button>
                 <button class="resume-btn" data-i18n="resume.experience">Experiencia</button>
                 <button class="resume-btn" data-i18n="resume.education">Educación</button>
@@ -88,7 +80,7 @@
             <div class="resume-box">
                 <div class="resume-detail about active">
                     <h2 class="heading">
-                        <span class="resume-about" data-i18n="resume.about">Sobre</span>
+                        <span class="span-styling-exception" data-i18n="resume.about">Sobre</span>
                         <span data-i18n="resume.me">Mí</span>
                     </h2>
                     <p class="desc" data-i18n="resume.aboutme.p1">
@@ -109,208 +101,201 @@
                 </div>
                 <div class="resume-detail experience">
                     <h2 class="heading">
-                        <span class="resume-about" data-i18n="resume.experience.span1">Mi</span>
+                        <span class="span-styling-exception" data-i18n="resume.experience.span1">Mi</span>
                         <span data-i18n="resume.experience.span2">Experiencia</span></h2>
-                    <p class="desc">He participado en proyectos de desarrollo web, móvil e industrial, abordando desde el mantenimiento de plataformas ecommerce hasta la creación de sistemas SCADA en entornos industriales. Tengo experiencia con tecnologías como Laravel, React Native, Firebase, Power BI y C#, aplicando patrones como MVC y MVVM. Mis prácticas profesionales han sido clave para aplicar conocimientos técnicos en contextos reales con impacto operativo.</p>
+                    <p class="desc" data-i18n="resume.experience.description">He participado en proyectos de desarrollo web, móvil e industrial, abordando desde el mantenimiento de plataformas ecommerce hasta la creación de sistemas SCADA en entornos industriales. Tengo experiencia con tecnologías como Laravel, React Native, Firebase, Power BI y C#, aplicando patrones como MVC y MVVM. Mis prácticas profesionales han sido clave para aplicar conocimientos técnicos en contextos reales con impacto operativo.</p>
                     <div class="resume-list">
                         <div class="resume-item">
-                            <p class="year">2024 - 2025</p>
-                            <h3>Desarrollador de Software Jr.</h3>
-                            <p class="company">Tesis de Colombia LTDA</p>
-                            <p>Migración de SCADA de QNX a Windows. Interfaces HMI en WPF (MVVM) y adaptación de base de datos a nueva arquitectura.</p>
+                            <p class="year" data-i18n="resume.experience.item1.year">2024 - 2025</p>
+                            <h3 data-i18n="resume.experience.item1.title">Desarrollador de Software Jr.</h3>
+                            <p class="company" data-i18n="resume.experience.item1.company">Tesis de Colombia LTDA</p>
+                            <p data-i18n="resume.experience.item1.description">Migración de SCADA de QNX a Windows. Interfaces HMI en WPF (MVVM) y adaptación de base de datos a nueva arquitectura.</p>
                         </div>
                         <div class="resume-item">
-                            <p class="year">2024</p>
-                            <h3>Desarrollador Móvil Jr.</h3>
-                            <p class="company">Red ABC</p>
-                            <p>App en React Native + Firebase para gestión de residuos. Autenticación por tipo de usuario y dashboards en Power BI.</p>
+                            <p class="year" data-i18n="resume.experience.item2.year">2024</p>
+                            <h3 data-i18n="resume.experience.item2.title">Desarrollador Móvil Jr.</h3>
+                            <p class="company" data-i18n="resume.experience.item2.company">Red ABC</p>
+                            <p data-i18n="resume.experience.item2.description">App en React Native + Firebase para gestión de residuos. Autenticación por tipo de usuario y dashboards en Power BI.</p>
                         </div>
                         <div class="resume-item">
-                            <p class="year">2024</p>
-                            <h3>Analista Planificación y Dev Jr.</h3>
-                            <p class="company">Ternium Colombia SAS</p>
-                            <p>Sistema de control de demoras con Laravel y MySQL. Reportes y trazabilidad de eventos operativos en Power BI.</p>
+                            <p class="year" data-i18n="resume.experience.item3.year">2024</p>
+                            <h3 data-i18n="resume.experience.item3.title">Analista Planificación y Dev Jr.</h3>
+                            <p class="company" data-i18n="resume.experience.item3.company">Ternium Colombia SAS</p>
+                            <p data-i18n="resume.experience.item3.description">Sistema de control de demoras con Laravel y MySQL. Reportes y trazabilidad de eventos operativos en Power BI.</p>
                         </div>
                         <div class="resume-item">
-                            <p class="year">2021 - 2023</p>
-                            <h3>Administrador Web</h3>
-                            <p class="company">La Gamelia</p>
-                            <p>Gestión técnica de tienda en WordPress. Plugins PHP, SEO, ERP, seguridad y soporte continuo.</p>
+                            <p class="year" data-i18n="resume.experience.item4.year">2021 - 2023</p>
+                            <h3 data-i18n="resume.experience.item4.title">Administrador Web</h3>
+                            <p class="company" data-i18n="resume.experience.item4.company">La Gamelia</p>
+                            <p data-i18n="resume.experience.item4.description">Gestión técnica de tienda en WordPress. Plugins PHP, SEO, ERP, seguridad y soporte continuo.</p>
                         </div>
                         <div class="resume-item">
-                            <p class="year">2018 - 2019</p>
-                            <h3>Diseñador Web</h3>
-                            <p class="company">Web X Press</p>
-                            <p>Sitios responsivos con HTML, CSS, JS y PHP. APIs REST, MVC y personalización de WordPress.</p>
+                            <p class="year" data-i18n="resume.experience.item5.year">2018 - 2019</p>
+                            <h3 data-i18n="resume.experience.item5.title">Diseñador Web</h3>
+                            <p class="company" data-i18n="resume.experience.item5.company">Web X Press</p>
+                            <p data-i18n="resume.experience.item5.description">Sitios responsivos con HTML, CSS, JS y PHP. APIs REST, MVC y personalización de WordPress.</p>
                         </div>
                         <div class="resume-item">
-                            <p class="year">2016 - 2017</p>
-                            <h3>Diseñador Gráfico</h3>
-                            <p class="company">Turpaís</p>
-                            <p>Diseño de piezas digitales e impresas. Apoyo visual a campañas con Adobe CC y redes sociales.</p>
+                            <p class="year" data-i18n="resume.experience.item6.year">2016 - 2017</p>
+                            <h3 data-i18n="resume.experience.item6.title">Diseñador Gráfico</h3>
+                            <p class="company" data-i18n="resume.experience.item6.company">Turpaís</p>
+                            <p data-i18n="resume.experience.item6.description">Diseño de piezas digitales e impresas. Apoyo visual a campañas con Adobe CC y redes sociales.</p>
                         </div>
                     </div>
                 </div>
                 <div class="resume-detail education">
-                    <h2 class="heading">Mi <span>Educación</span></h2>
-                    <p class="desc">He combinado estudios universitarios en ingeniería con formación técnica y cursos especializados, lo que me ha dado una base sólida tanto teórica como práctica en el desarrollo de software.</p>
+                    <h2 class="heading"><span class="span-styling-exception" data-i18n="resume.education.span1">Mi</span> <span data-i18n="resume.education.span2">Educación</span></h2>
+                    <p class="desc" data-i18n="resume.education.description">He combinado estudios universitarios en ingeniería con formación técnica y cursos especializados, lo que me ha dado una base sólida tanto teórica como práctica en el desarrollo de software.</p>
                     <div class="resume-list">
                         <div class="resume-item">
-                            <p class="year">2019 - Presente</p>
-                            <h3>Ingeniería de Software</h3>
-                            <p class="company">Universidad Manuela Beltrán</p>
-                            <p>Formación integral en desarrollo de software, análisis de datos, seguridad informática, servicios cloud y gestión de proyectos tecnológicos.</p>
+                            <p class="year" data-i18n="resume.education.item1.year">2019 - Presente</p>
+                            <h3 data-i18n="resume.education.item1.title">Ingeniería de Software</h3>
+                            <p class="company" data-i18n="resume.education.item1.company">Universidad Manuela Beltrán</p>
+                            <p data-i18n="resume.education.item1.description">Formación integral en desarrollo de software, análisis de datos, seguridad informática, servicios cloud y gestión de proyectos tecnológicos.</p>
                         </div>
 
                         <div class="resume-item">
-                            <p class="year">2014 - 2015</p>
-                            <h3>Técnico en Diseño Gráfico y Web</h3>
-                            <p class="company">Unitécnica - Manizales</p>
-                            <p>Aprendizaje en diseño visual, estructuras web, HTML, CSS, JS y herramientas gráficas aplicadas al desarrollo frontend.</p>
-                        </div>
-
-                        <!-- Formación Complementaria Universitaria -->
-                        <div class="resume-item second">
-                            <p class="year">2024</p>
-                            <h3>Gestión de Proyectos de Sistemas de Información</h3>
-                            <p class="company">Universidad Manuela Beltrán</p>
-                            <p>Aplicación de metodologías para la planificación, ejecución y seguimiento de proyectos informáticos complejos.</p>
+                            <p class="year" data-i18n="resume.education.item2.year">2014 - 2015</p>
+                            <h3 data-i18n="resume.education.item2.title">Técnico en Diseño Gráfico y Web</h3>
+                            <p class="company" data-i18n="resume.education.item2.company">Unitécnica - Manizales</p>
+                            <p data-i18n="resume.education.item2.description">Aprendizaje en diseño visual, estructuras web, HTML, CSS, JS y herramientas gráficas aplicadas al desarrollo frontend.</p>
                         </div>
 
                         <div class="resume-item second">
-                            <p class="year">2024</p>
-                            <h3>Tendencias en Servicios Cloud</h3>
-                            <p class="company">Universidad Manuela Beltrán</p>
-                            <p>Estudio de arquitecturas en la nube, modelos de servicios (IaaS, PaaS, SaaS) y plataformas como AWS.</p>
+                            <p class="year" data-i18n="resume.education.item3.year">2024</p>
+                            <h3 data-i18n="resume.education.item3.title">Gestión de Proyectos de Sistemas de Información</h3>
+                            <p class="company" data-i18n="resume.education.item3.company">Universidad Manuela Beltrán</p>
+                            <p data-i18n="resume.education.item3.description">Aplicación de metodologías para la planificación, ejecución y seguimiento de proyectos informáticos complejos.</p>
                         </div>
 
                         <div class="resume-item second">
-                            <p class="year">2024</p>
-                            <h3>Fundamentos de Seguridad Informática</h3>
-                            <p class="company">Universidad Manuela Beltrán</p>
-                            <p>Principios esenciales de ciberseguridad, análisis de vulnerabilidades y buenas prácticas en entornos corporativos.</p>
+                            <p class="year" data-i18n="resume.education.item4.year">2024</p>
+                            <h3 data-i18n="resume.education.item4.title">Tendencias en Servicios Cloud</h3>
+                            <p class="company" data-i18n="resume.education.item4.company">Universidad Manuela Beltrán</p>
+                            <p data-i18n="resume.education.item4.description">Estudio de arquitecturas en la nube, modelos de servicios (IaaS, PaaS, SaaS) y plataformas como AWS.</p>
                         </div>
 
                         <div class="resume-item second">
-                            <p class="year">2024</p>
-                            <h3>Análisis de Datos</h3>
-                            <p class="company">Universidad Manuela Beltrán</p>
-                            <p>Procesamiento, visualización y análisis de información estructurada mediante herramientas como SQL y Power BI.</p>
+                            <p class="year" data-i18n="resume.education.item5.year">2024</p>
+                            <h3 data-i18n="resume.education.item5.title">Fundamentos de Seguridad Informática</h3>
+                            <p class="company" data-i18n="resume.education.item5.company">Universidad Manuela Beltrán</p>
+                            <p data-i18n="resume.education.item5.description">Principios esenciales de ciberseguridad, análisis de vulnerabilidades y buenas prácticas en entornos corporativos.</p>
                         </div>
 
                         <div class="resume-item second">
-                            <p class="year">2024</p>
-                            <h3>Emerging Web Frameworks</h3>
-                            <p class="company">Universidad Manuela Beltrán</p>
-                            <p>Estudio de frameworks modernos como React, Laravel y tecnologías orientadas a SPA y PWA.</p>
+                            <p class="year" data-i18n="resume.education.item6.year">2024</p>
+                            <h3 data-i18n="resume.education.item6.title">Análisis de Datos</h3>
+                            <p class="company" data-i18n="resume.education.item6.company">Universidad Manuela Beltrán</p>
+                            <p data-i18n="resume.education.item6.description">Procesamiento, visualización y análisis de información estructurada mediante herramientas como SQL y Power BI.</p>
                         </div>
 
                         <div class="resume-item second">
-                            <p class="year">2024</p>
-                            <h3>Java: Servicios Web</h3>
-                            <p class="company">Universidad Manuela Beltrán</p>
-                            <p>Desarrollo de servicios backend RESTful con Java, manejo de controladores, entidades y bases de datos.</p>
+                            <p class="year" data-i18n="resume.education.item7.year">2024</p>
+                            <h3 data-i18n="resume.education.item7.title">Emerging Web Frameworks</h3>
+                            <p class="company" data-i18n="resume.education.item7.company">Universidad Manuela Beltrán</p>
+                            <p data-i18n="resume.education.item7.description">Estudio de frameworks modernos como React, Laravel y tecnologías orientadas a SPA y PWA.</p>
                         </div>
 
                         <div class="resume-item second">
-                            <p class="year">2024</p>
-                            <h3>Ingeniería Social para TI</h3>
-                            <p class="company">Universidad Manuela Beltrán</p>
-                            <p>Análisis de vectores de ataque que involucran manipulación humana y protección frente a vulnerabilidades sociales.</p>
-                        </div>
-
-                        <!-- Cursos externos -->
-                        <div class="resume-item second">
-                            <p class="year">2023</p>
-                            <h3>Laravel 9 - Crea Aplicaciones y Sitios Web con PHP 8 y MVC</h3>
-                            <p class="company">Udemy</p>
-                            <p>Desarrollo backend estructurado con Laravel, implementación de controladores, rutas, migraciones y relaciones Eloquent.</p>
+                            <p class="year" data-i18n="resume.education.item8.year">2024</p>
+                            <h3 data-i18n="resume.education.item8.title">Java: Servicios Web</h3>
+                            <p class="company" data-i18n="resume.education.item8.company">Universidad Manuela Beltrán</p>
+                            <p data-i18n="resume.education.item8.description">Desarrollo de servicios backend RESTful con Java, manejo de controladores, entidades y bases de datos.</p>
                         </div>
 
                         <div class="resume-item second">
-                            <p class="year">2023</p>
-                            <h3>GIT + GitHub: Todo un sistema de control de versiones</h3>
-                            <p class="company">Udemy</p>
-                            <p>Control de versiones distribuido, flujo de trabajo colaborativo con ramas, merges, pull requests y manejo de conflictos.</p>
+                            <p class="year" data-i18n="resume.education.item9.year">2024</p>
+                            <h3 data-i18n="resume.education.item9.title">Ingeniería Social para TI</h3>
+                            <p class="company" data-i18n="resume.education.item9.company">Universidad Manuela Beltrán</p>
+                            <p data-i18n="resume.education.item9.description">Análisis de vectores de ataque que involucran manipulación humana y protección frente a vulnerabilidades sociales.</p>
                         </div>
 
                         <div class="resume-item second">
-                            <p class="year">2020</p>
-                            <h3>Diseñando páginas web con Bootstrap</h3>
-                            <p class="company">Universidad Austral</p>
-                            <p>Creación de interfaces responsive con Bootstrap, personalización de componentes, diseño móvil primero y adaptabilidad.</p>
+                            <p class="year" data-i18n="resume.education.item10.year">2023</p>
+                            <h3 data-i18n="resume.education.item10.title">Laravel 9 - Crea Aplicaciones y Sitios Web con PHP 8 y MVC</h3>
+                            <p class="company" data-i18n="resume.education.item10.company">Udemy</p>
+                            <p data-i18n="resume.education.item10.description">Desarrollo backend estructurado con Laravel, implementación de controladores, rutas, migraciones y relaciones Eloquent.</p>
+                        </div>
+
+                        <div class="resume-item second">
+                            <p class="year" data-i18n="resume.education.item11.year">2023</p>
+                            <h3 data-i18n="resume.education.item11.title">GIT + GitHub: Todo un sistema de control de versiones</h3>
+                            <p class="company" data-i18n="resume.education.item11.company">Udemy</p>
+                            <p data-i18n="resume.education.item11.description">Control de versiones distribuido, flujo de trabajo colaborativo con ramas, merges, pull requests y manejo de conflictos.</p>
+                        </div>
+
+                        <div class="resume-item second">
+                            <p class="year" data-i18n="resume.education.item12.year">2020</p>
+                            <h3 data-i18n="resume.education.item12.title">Diseñando páginas web con Bootstrap</h3>
+                            <p class="company" data-i18n="resume.education.item12.company">Universidad Austral</p>
+                            <p data-i18n="resume.education.item12.description">Creación de interfaces responsive con Bootstrap, personalización de componentes, diseño móvil primero y adaptabilidad.</p>
                         </div>
                     </div>
                 </div>
                 <div class="resume-detail skills">
-                    <h2 class="heading">Mis <span>Habilidades</span></h2>
-                    <p class="desc">Me especializo en desarrollo de software usando herramientas modernas y patrones de diseño eficientes. Aporto habilidades en desarrollo frontend y backend, bases de datos, visualización de datos y despliegue en la nube.</p>
+                    <h2 class="heading"><span class="span-styling-exception" data-i18n="resume.skills.span1">Mis</span> <span data-i18n="resume.skills.span2">Habilidades</span></h2>
+                    <p class="desc" data-i18n="resume.skills.description">Me especializo en desarrollo de software usando herramientas modernas y patrones de diseño eficientes. Aporto habilidades en desarrollo frontend y backend, bases de datos, visualización de datos y despliegue en la nube.</p>
                     <div class="resume-list">
 
-                        <!-- FUNDAMENTOS FRONTEND -->
                         <div class="resume-item skill">
                             <i class="fa-brands fa-html5"></i>
-                            <span>HTML</span>
+                            <span data-i18n="resume.skills.html">HTML</span>
                         </div>
                         <div class="resume-item skill">
                             <i class="fa-brands fa-css3-alt"></i>
-                            <span>CSS</span>
+                            <span data-i18n="resume.skills.css">CSS</span>
                         </div>
                         <div class="resume-item skill">
                             <i class="fa-brands fa-js"></i>
-                            <span>JavaScript</span>
+                            <span data-i18n="resume.skills.javascript">JavaScript</span>
                         </div>
                         <div class="resume-item skill">
                             <i class="fa-brands fa-react"></i>
-                            <span>React</span>
+                            <span data-i18n="resume.skills.react">React</span>
                         </div>
                         <div class="resume-item skill">
                             <i class="fab fa-wordpress"></i>
-                            <span>WordPress</span>
+                            <span data-i18n="resume.skills.wordpress">WordPress</span>
                         </div>
 
-                        <!-- BACKEND -->
                         <div class="resume-item skill">
                             <i class="fa-brands fa-php"></i>
-                            <span>PHP</span>
+                            <span data-i18n="resume.skills.php">PHP</span>
                         </div>
                         <div class="resume-item skill">
                             <i class="fa-brands fa-laravel"></i>
-                            <span>Laravel</span>
+                            <span data-i18n="resume.skills.laravel">Laravel</span>
                         </div>
                         <div class="resume-item skill">
                             <i class="fa-brands fa-node-js"></i>
-                            <span>Node.js</span>
+                            <span data-i18n="resume.skills.nodejs">Node.js</span>
                         </div>
                         <div class="resume-item skill">
                             <i class="fab fa-java"></i>
-                            <span>Java</span>
+                            <span data-i18n="resume.skills.java">Java</span>
                         </div>
                         <div class="resume-item skill">
                             <i class="fa-solid fa-diagram-project" style="font-size: 60px;"></i>
-                            <span>API Rest</span>
+                            <span data-i18n="resume.skills.apirest">API Rest</span>
                         </div>
 
-                        <!-- BASES DE DATOS -->
                         <div class="resume-item skill">
                             <i class="fa-solid fa-database" style="font-size: 70px;"></i>
-                            <span>MySQL, PostgreSQL, SQL Server</span>
+                            <span data-i18n="resume.skills.databases">MySQL, PostgreSQL, SQL Server</span>
                         </div>
 
-                        <!-- CONTROL DE VERSIONES Y HERRAMIENTAS -->
                         <div class="resume-item skill">
                             <i class="fab fa-git" style="font-size: 60px;"></i>
-                            <span>Git</span>
+                            <span data-i18n="resume.skills.git">Git</span>
                         </div>
                         <div class="resume-item skill">
                             <i class="fa-brands fa-npm" style="font-size: 70px;"></i>
-                            <span>npm</span>
+                            <span data-i18n="resume.skills.npm">npm</span>
                         </div>
 
-                        <!-- DESPLIEGUE Y CLOUD -->
                         <div class="resume-item skill">
                             <i class="fa-brands fa-aws" style="font-size: 60px;"></i>
-                            <span>AWS</span>
+                            <span data-i18n="resume.skills.aws">AWS</span>
                         </div>
                     </div>
                 </div>
@@ -318,126 +303,91 @@
         </div>
     </section>
 
-     <!-- Servicios sección -->
-    <section class="services">
-        <h2 class="heading">Mis <span>Servicios</span></h2>
+     <section class="services">
+        <h2 class="heading"><span class="span-styling-exception" data-i18n="services.span1">Mis</span> <span data-i18n="services.span2">Servicios</span></h2>
         <div class="services-container">
             <div class="services-box">
                 <div class="icon"><i class="bx bx-code-alt"></i></div>
-                <h3>Desarrollo Frontend</h3>
-                <p>Desarrollo de interfaces modernas y responsivas usando HTML, CSS, JavaScript, React y Tailwind CSS, enfocadas en experiencia de usuario y rendimiento visual.</p>
+                <h3 data-i18n="services.frontend.title">Desarrollo Frontend</h3>
+                <p data-i18n="services.frontend.description">Desarrollo de interfaces modernas y responsivas usando HTML, CSS, JavaScript, React y Tailwind CSS, enfocadas en experiencia de usuario y rendimiento visual.</p>
             </div>
             <div class="services-box">
                 <div class="icon"><i class="bx bx-server"></i></div>
-                <h3>Desarrollo Backend</h3>
-                <p>Implementación de lógica de negocio y servicios RESTful con PHP (Laravel), Node.js y Express. Aplicación de patrones como MVC y MVVM en proyectos web e industriales.</p>
+                <h3 data-i18n="services.backend.title">Desarrollo Backend</h3>
+                <p data-i18n="services.backend.description">Implementación de lógica de negocio y servicios RESTful con PHP (Laravel), Node.js y Express. Aplicación de patrones como MVC y MVVM en proyectos web e industriales.</p>
             </div>
             <div class="services-box">
                 <div class="icon"><i class="bx bx-network-chart"></i></div>
-                <h3>Consumo de APIs</h3>
-                <p>Creación e integración de APIs RESTful usando Fetch y Axios. Manejo de respuestas asíncronas, documentación de endpoints con Swagger y pruebas en Postman.</p>
+                <h3 data-i18n="services.apis.title">Consumo de APIs</h3>
+                <p data-i18n="services.apis.description">Creación e integración de APIs RESTful usando Fetch y Axios. Manejo de respuestas asíncronas, documentación de endpoints con Swagger y pruebas en Postman.</p>
             </div>
             <div class="services-box">
                 <div class="icon"><i class="fa-solid fa-database"></i></div>
-                <h3>Bases de Datos</h3>
-                <p>Diseño, consulta y administración de bases de datos relacionales con MySQL y SQL Server. Integración con Firestore en soluciones móviles y web.</p>
+                <h3 data-i18n="services.databases.title">Bases de Datos</h3>
+                <p data-i18n="services.databases.description">Diseño, consulta y administración de bases de datos relacionales con MySQL y SQL Server. Integración con Firestore en soluciones móviles y web.</p>
             </div>
             <div class="services-box">
                 <div class="icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-                <h3>Análisis de Datos</h3>
-                <p>Diseño de procesos ETL para extracción, transformación y carga de datos hacia data warehouses. Creación de dashboards interactivos con Power BI.</p>
+                <h3 data-i18n="services.dataanalysis.title">Análisis de Datos</h3>
+                <p data-i18n="services.dataanalysis.description">Diseño de procesos ETL para extracción, transformación y carga de datos hacia data warehouses. Creación de dashboards interactivos con Power BI.</p>
             </div>
             <div class="services-box">
                 <div class="icon"><i class="fa-solid fa-mobile-screen"></i></div>
-                <h3>Desarrollo Móvil</h3>
-                <p>Creación de aplicaciones móviles multiplataforma con React Native. Integración de APIs, manejo de estados con Redux y despliegue en Android e iOS.</p>
+                <h3 data-i18n="services.mobiledev.title">Desarrollo Móvil</h3>
+                <p data-i18n="services.mobiledev.description">Creación de aplicaciones móviles multiplataforma con React Native. Integración de APIs, manejo de estados con Redux y despliegue en Android e iOS.</p>
             </div>
             <div class="services-box">
                 <div class="icon"><i class="fa-brands fa-aws"></i></div>
-                <h3>Despliegue en AWS</h3>
-                <p>Configuración y despliegue de soluciones escalables en la nube usando EC2, S3 y RDS. Optimización de rendimiento, seguridad y disponibilidad.</p>
+                <h3 data-i18n="services.aws.title">Despliegue en AWS</h3>
+                <p data-i18n="services.aws.description">Configuración y despliegue de soluciones escalables en la nube usando EC2, S3 y RDS. Optimización de rendimiento, seguridad y disponibilidad.</p>
             </div>
             <div class="services-box">
                 <div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                <h3>Herramientas</h3>
-                <p>Uso de herramientas como VS Code, Git, GitHub, PowerShell, Jira y Trello para gestión de proyectos, control de versiones y automatización de tareas.</p>
+                <h3 data-i18n="services.tools.title">Herramientas</h3>
+                <p data-i18n="services.tools.description">Uso de herramientas como VS Code, Git, GitHub, PowerShell, Jira y Trello para gestión de proyectos, control de versiones y automatización de tareas.</p>
             </div>
 
         </div>
     </section>
 
-    <!-- Portafolio -->
     <section class="portfolio">
-        <h2 class="heading">Mi <span>Portafolio</span></h2>
+        <h2 class="heading"><span class="span-styling-exception" data-i18n="portfolio.span1">Mi</span> <span data-i18n="portfolio.span2">Portafolio</span></h2>
         <div class="portfolio-container">
             <div class="portfolio-box">
                 <div class="portfolio-detail active">
-                    <p class="numb">01</p>
-                    <h3>Gestor de Proyectos</h3>
-                    <p>Thesis Project Manager es una aplicación web full-stack para la gestión integral de proyectos. Su
-                        arquitectura desacoplada consiste en un backend con Node.js que expone una API RESTful y utiliza Prisma como
-                        ORM para interactuar con una base de datos relacional. El frontend es una SPA desarrollada con Next.js y 
-                        TypeScript, estilizada con Tailwind CSS para una interfaz moderna y responsiva.
-                        La aplicación ofrece funcionalidades clave como autenticación de usuarios, múltiples vistas de proyectos
-                        (tablero, lista, cronograma), gestión de tareas por prioridad y búsqueda avanzada, demostrando una sólida
-                        implementación de un sistema de gestión de proyectos completo y eficiente.</p>
+                    <p class="numb" data-i18n="portfolio.item1.numb">01</p>
+                    <h3 data-i18n="portfolio.item1.title">Gestor de Proyectos</h3>
+                    <p data-i18n="portfolio.item1.description">Thesis Project Manager es una aplicación web full-stack para la gestión integral de proyectos. Su arquitectura desacoplada consiste en un backend con Node.js que expone una API RESTful y utiliza Prisma como ORM para interactuar con una base de datos relacional. El frontend es una SPA desarrollada con Next.js y TypeScript, estilizada con Tailwind CSS para una interfaz moderna y responsiva. La aplicación ofrece funcionalidades clave como autenticación de usuarios, múltiples vistas de proyectos (tablero, lista, cronograma), gestión de tareas por prioridad y búsqueda avanzada, demostrando una sólida implementación de un sistema de gestión de proyectos completo y eficiente.</p>
                     <div class="tech">
-                        <span>Next.js</span>
-                        <span>Node.js</span>
-                        <span>Express</span>
-                        <span>Prisma</span>
-                        <span>PostgreSQL</span>
+                        <span data-i18n="portfolio.item1.tech1">Next.js</span>
+                        <span data-i18n="portfolio.item1.tech2">Node.js</span>
+                        <span data-i18n="portfolio.item1.tech3">Express</span>
+                        <span data-i18n="portfolio.item1.tech4">Prisma</span>
+                        <span data-i18n="portfolio.item1.tech5">PostgreSQL</span>
                     </div>
                     <div class="live-github">
-                        <a href="https://github.com/andresjimenez11/thesis-project-manager" target="_blank"><i class="fa-brands fa-github"></i><span>Repositorio de GitHub</span></a>
+                        <a href="https://github.com/andresjimenez11/thesis-project-manager" target="_blank"><i class="fa-brands fa-github"></i><span data-i18n="portfolio.item1.github">Repositorio de GitHub</span></a>
                     </div>
                 </div>
                 <div class="portfolio-detail">
-                    <p class="numb">02</p>
-                    <h3>Exquisite Coffee</h3>
-                    <p>Exquisite Coffee es una aplicación web full-stack que optimiza la toma y gestión de pedidos en una cafetería, ofreciendo una experiencia fluida al cliente. Utiliza un backend en Laravel con más de 15 endpoints RESTful y una base de datos relacional de 8 tablas, junto con un frontend en React (SPA) estilizado con Tailwind CSS. Implementa autenticación con roles, gestión de estado global con React Context, y SWR para sincronización eficiente en tiempo real. La integración entre frontend y backend demuestra habilidades sólidas en desarrollo web desacoplado, orientado a la eficiencia operativa.</p>
+                    <p class="numb" data-i18n="portfolio.item2.numb">02</p>
+                    <h3 data-i18n="portfolio.item2.title">Exquisite Coffee</h3>
+                    <p data-i18n="portfolio.item2.description">Exquisite Coffee es una aplicación web full-stack que optimiza la toma y gestión de pedidos en una cafetería, ofreciendo una experiencia fluida al cliente. Utiliza un backend en Laravel con más de 15 endpoints RESTful y una base de datos relacional de 8 tablas, junto con un frontend en React (SPA) estilizado con Tailwind CSS. Implementa autenticación con roles, gestión de estado global con React Context, y SWR para sincronización eficiente en tiempo real. La integración entre frontend y backend demuestra habilidades sólidas en desarrollo web desacoplado, orientado a la eficiencia operativa.</p>
                     <div class="tech">
-                        <span>Laravel</span>
-                        <span>React</span>
-                        <span>Tailwind</span>
-                        <span>SWR</span>
-                        <span>PHP</span>
-                        <span>JavaScript</span>
+                        <span data-i18n="portfolio.item2.tech1">Laravel</span>
+                        <span data-i18n="portfolio.item2.tech2">React</span>
+                        <span data-i18n="portfolio.item2.tech3">Tailwind</span>
+                        <span data-i18n="portfolio.item2.tech4">SWR</span>
+                        <span data-i18n="portfolio.item2.tech5">PHP</span>
+                        <span data-i18n="portfolio.item2.tech6">JavaScript</span>
                     </div>
                     <div class="live-github">
-                        <a href="https://github.com/andresjimenez11/exquisite-coffee" target="_blank"><i class="fa-brands fa-github"></i><span>Repositorio de GitHub</span></a>
+                        <a href="https://github.com/andresjimenez11/exquisite-coffee" target="_blank"><i class="fa-brands fa-github"></i><span data-i18n="portfolio.item2.github">Repositorio de GitHub</span></a>
                     </div>
                 </div>
-                <!-- <div class="portfolio-detail">
-                    <p class="numb">03</p>
-                    <h3>Frontend Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, corporis exercitationem placeat optio repellendus incidunt consectetur in, temporibus eum ad quo, at officiis aperiam ex unde illo sint quam illum!</p>
-                    <div class="tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="live-github">
-                        <a href="#"><i class="fa-brands fa-github"></i><span>Repositorio de GitHub</span></a>
-                    </div>
-                </div>
-                <div class="portfolio-detail">
-                    <p class="numb">04</p>
-                    <h3>Frontend Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, corporis exercitationem placeat optio repellendus incidunt consectetur in, temporibus eum ad quo, at officiis aperiam ex unde illo sint quam illum!</p>
-                    <div class="tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="live-github">
-                        <a href="#"><i class="fa-brands fa-github"></i><span>Repositorio de GitHub</span></a>
-                    </div>
-                </div> -->
             </div>
             
             <div class="portfolio-box">
-                <!-- Imágenes Carrusel -->
                 <div class="portfolio-carousel">
                     <div class="img-slide">
                         <div class="img-item">
@@ -446,12 +396,6 @@
                         <div class="img-item">
                             <img src="images/2.png">
                         </div>
-                        <!-- <div class="img-item">
-                            <img src="images/1.png">
-                        </div>
-                        <div class="img-item">
-                            <img src="images/1.png">
-                        </div> -->
                     </div>
                 </div>
                 <div class="navigation">
@@ -462,47 +406,45 @@
         </div>
     </section>
 
-    <!-- Contacto -->
     <section class="contact">
         <div class="contact-container">
             <div class="contact-box">
-                <h2>Trabajemos <span>Juntos</span></h2>
-                <p>¿Tienes una idea o proyecto en mente? Estoy listo para ayudarte a hacerlo realidad.</p>
+                <h2 data-i18n="contact.title">Trabajemos <span>Juntos</span></h2>
+                <p data-i18n="contact.description">¿Tienes una idea o proyecto en mente? Estoy listo para ayudarte a hacerlo realidad.</p>
                 <div class="contact-detail">
                     <a href="https://wa.me/573206195270"><i class="fa-solid fa-mobile-screen"></i></a>
                     <div class="detail">
-                        <p>Teléfono</p>
-                        <p>+57 320 690 52 70</p>
+                        <p data-i18n="contact.phone">Teléfono</p>
+                        <p data-i18n="contact.phoneNumber">+57 320 690 52 70</p>
                     </div>
                 </div>
                 <div class="contact-detail">
                     <a href="mailto:andresjs1125@outlook.es"><i class="fa-solid fa-envelope"></i></a>
                     <div class="detail">
-                        <p>Email</p>
-                        <p>andresjs1125@outlook.es</p>
+                        <p data-i18n="contact.email">Email</p>
+                        <p data-i18n="contact.emailAddress">andresjs1125@outlook.es</p>
                     </div>
                 </div>
             </div>
 
             <div class="contact-box">
                 <form id="contact-form" action="https://formsubmit.co/dd832374dfd419784b2f843b92b5d99f" method="POST" novalidate>
-                    <h2 class="heading">Contacto</h2>
+                    <h2 class="heading" data-i18n="contact.form.title">Contacto</h2>
                     <div class="field-box">
-                        <input type="text" name="nombre" placeholder="Nombre completo" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <input type="text" name="telefono" placeholder="Teléfono" required>
-                        <input type="text" name="asunto" placeholder="Asunto" required>
-                        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                        <input type="text" name="nombre" placeholder="Nombre completo" required data-i18n="contact.form.namePlaceholder">
+                        <input type="email" name="email" placeholder="Email" required data-i18n="contact.form.emailPlaceholder">
+                        <input type="text" name="telefono" placeholder="Teléfono" required data-i18n="contact.form.phonePlaceholder">
+                        <input type="text" name="asunto" placeholder="Asunto" required data-i18n="contact.form.subjectPlaceholder">
+                        <textarea name="mensaje" placeholder="Tu mensaje" required data-i18n="contact.form.messagePlaceholder"></textarea>
                     </div>
 
                      <div id="form-errors" class="form-errors"></div>
 
-                    <button type="submit" class="btn">Enviar</button>
+                    <button type="submit" class="btn" data-i18n="contact.form.sendButton">Enviar</button>
                 </form>
             </div>
     </section>
 
-    <!-- Custom JS -->
     <script src="js/script.js"></script>
     </body>
 </html>
