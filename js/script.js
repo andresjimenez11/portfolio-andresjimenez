@@ -135,7 +135,7 @@ arrowRight && arrowRight.addEventListener('click', () => {
 });
 
 arrowLeft && arrowLeft.addEventListener('click', () => {
-    if (index = 1) {
+    if (index === 1) {
         index--;
         arrowRight.classList.remove('disabled');
         arrowLeft.classList.add('disabled');
@@ -258,25 +258,44 @@ let currentLang = 'es';
 document.getElementById('lang-toggle').addEventListener('click', () => {
     currentLang = currentLang === 'es' ? 'en' : 'es';
     loadLanguage(currentLang);
-    document.getElementById('lang-toggle').textContent = currentLang === 'es' ? 'EN' : 'ES';
+    document.getElementById('lang-toggle').textContent = currentLang === 'es' ? 'ES' : 'EN';
+
+    document.getElementById('es-flag').classList.toggle('active', currentLang === 'es');
+    document.getElementById('en-flag').classList.toggle('active', currentLang === 'en');
 });
 
 function loadLanguage(lang) {
     fetch('lang/lang.json')
         .then(res => res.json())
         .then(data => {
+
             const elements = document.querySelectorAll('[data-i18n]');
             elements.forEach(el => {
                 const key = el.getAttribute('data-i18n');
                 if (data[lang][key]) {
-                    // Si el elemento tiene data-text (como el span animado), lo actualizamos con setAttribute
+                    
                     if (el.hasAttribute('data-text')) {
                         el.setAttribute('data-text', data[lang][key]);
-                        el.textContent = data[lang][key]; // opcional, si quieres que también cambie el texto visible
+                        el.textContent = data[lang][key];
                     } else {
                         el.textContent = data[lang][key];
                     }
                 }
             });
+
+            const placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
+            placeholderElements.forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (data[lang][key]) {
+                    el.setAttribute('placeholder', data[lang][key]);
+                }
+            });
         });
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('es-flag').classList.toggle('active', currentLang === 'es');
+    document.getElementById('en-flag').classList.toggle('active', currentLang === 'en');
+    document.getElementById('lang-toggle').textContent = currentLang === 'es' ? 'ES' : 'EN';
+    loadLanguage(currentLang);
+});

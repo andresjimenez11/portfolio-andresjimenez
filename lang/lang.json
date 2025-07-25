@@ -2,7 +2,7 @@
   "es": {
     "title": "Portafolio - Andrés F. Jiménez",
     "home": "Inicio",
-    "profile": "Perfil Profesional",
+    "profile": "Perfil",
     "services": "Servicios",
     "portfolio": "Portafolio",
     "contact": "Contacto",
@@ -167,7 +167,8 @@
     "portfolio.item2.tech6": "JavaScript",
     "portfolio.item2.github": "Repositorio de GitHub",
 
-    "contact.title": "Trabajemos Juntos",
+    "contact.span1": "Trabajemos",
+    "contact.span2": "Juntos",
     "contact.description": "¿Tienes una idea o proyecto en mente? Estoy listo para ayudarte a hacerlo realidad.",
     "contact.phone": "Teléfono",
     "contact.phoneNumber": "+57 320 690 52 70",
@@ -184,7 +185,7 @@
   "en": {
     "title": "Portfolio - Andrés F. Jiménez",
     "home": "Home",
-    "profile": "Professional Profile",
+    "profile": "Profile",
     "services": "Services",
     "portfolio": "Portfolio",
     "contact": "Contact",
@@ -349,18 +350,19 @@
     "portfolio.item2.tech6": "JavaScript",
     "portfolio.item2.github": "GitHub Repository",
 
-    "contact.title": "Let's Work Together",
+    "contact.span1": "Let's Work",
+    "contact.span2": "Together",
     "contact.description": "Do you have an idea or project in mind? I'm ready to help you make it a reality.",
     "contact.phone": "Phone",
     "contact.phoneNumber": "+57 320 690 52 70",
     "contact.email": "Email",
     "contact.emailAddress": "andresjs1125@outlook.es",
     "contact.form.title": "Contact",
-    "contact.form.namePlaceholder": "Full name",
+    "contact.form.namePlaceholder": "Full Name",
     "contact.form.emailPlaceholder": "Email",
     "contact.form.phonePlaceholder": "Phone",
     "contact.form.subjectPlaceholder": "Subject",
-    "contact.form.messagePlaceholder": "Your message",
+    "contact.form.messagePlaceholder": "Your Message",
     "contact.form.sendButton": "Send"
   }
 }

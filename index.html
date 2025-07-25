@@ -22,11 +22,15 @@
 
         <nav>
             <a href="#" class="active" data-i18n="home">Inicio</a>
-            <a href="#" data-i18n="profile">Perfil Profesional</a>
+            <a href="#" data-i18n="profile">Perfil</a>
             <a href="#" data-i18n="services"> Servicios</a>
             <a href="#" data-i18n="portfolio">Portafolio</a>
             <a href="#" data-i18n="contact">Contacto</a>
-            <button id="lang-toggle">ES</button>
+            <div class="lang-container">
+                <img src="images/es_flag.png" alt="Bandera de España" id="es-flag" class="lang-flag active">
+                <img src="images/us_flag.png" alt="US Flag" id="en-flag" class="lang-flag">
+                <button id="lang-toggle"/>
+            </div>
         </nav>
     </header>
 
@@ -43,7 +47,7 @@
         <div class="home-detail">
             <h1 data-i18n="home.name">Andrés Jiménez</h1>
             <h2>
-                <span class="home-presentation" data-i18n="home.presentation">Soy</span>
+                <span class="span-styling-exception" data-i18n="home.presentation">Soy</span>
                 <span style="--i:0;" data-text="Desarrollador" data-i18n="home.profesion">Desarrollador</span>
             </h2>
             <p data-i18n="home.description">¡Hola! Soy desarrollador Full Stack y estudiante de Ingeniería de Software en etapa final. Tengo experiencia en desarrollo web, móvil e industrial, aplicando buenas prácticas y creando soluciones funcionales y escalables.</p>
@@ -409,7 +413,10 @@
     <section class="contact">
         <div class="contact-container">
             <div class="contact-box">
-                <h2 data-i18n="contact.title">Trabajemos <span>Juntos</span></h2>
+                <h2>
+                    <span class="span-styling-exception" data-i18n="contact.span1">Trabajemos</span> 
+                    <span data-i18n="contact.span2">Juntos</span>
+                </h2>
                 <p data-i18n="contact.description">¿Tienes una idea o proyecto en mente? Estoy listo para ayudarte a hacerlo realidad.</p>
                 <div class="contact-detail">
                     <a href="https://wa.me/573206195270"><i class="fa-solid fa-mobile-screen"></i></a>
@@ -431,11 +438,11 @@
                 <form id="contact-form" action="https://formsubmit.co/dd832374dfd419784b2f843b92b5d99f" method="POST" novalidate>
                     <h2 class="heading" data-i18n="contact.form.title">Contacto</h2>
                     <div class="field-box">
-                        <input type="text" name="nombre" placeholder="Nombre completo" required data-i18n="contact.form.namePlaceholder">
-                        <input type="email" name="email" placeholder="Email" required data-i18n="contact.form.emailPlaceholder">
-                        <input type="text" name="telefono" placeholder="Teléfono" required data-i18n="contact.form.phonePlaceholder">
-                        <input type="text" name="asunto" placeholder="Asunto" required data-i18n="contact.form.subjectPlaceholder">
-                        <textarea name="mensaje" placeholder="Tu mensaje" required data-i18n="contact.form.messagePlaceholder"></textarea>
+                        <input type="text" name="nombre" placeholder="Nombre completo" data-i18n-placeholder="contact.form.namePlaceholder" required>
+                        <input type="email" name="email" placeholder="Email" data-i18n-placeholder="contact.form.emailPlaceholder" required>
+                        <input type="text" name="telefono" placeholder="Teléfono" data-i18n-placeholder="contact.form.phonePlaceholder" required>
+                        <input type="text" name="asunto" placeholder="Asunto" data-i18n-placeholder="contact.form.subjectPlaceholder" required>
+                        <textarea name="mensaje" placeholder="Tu mensaje" data-i18n-placeholder="contact.form.messagePlaceholder" required></textarea>
                     </div>
 
                      <div id="form-errors" class="form-errors"></div>
