@@ -4,7 +4,7 @@ Hello! 👋 This is the source code of my personal portfolio, a single-page webs
 
 ## ✨ Live Demo
 
-You can see the portfolio in action here: [Portfolio Link](https://portfolio-andresjimenez.netlify.app/)
+You can see the portfolio in action here: [Portfolio Link](https://andresjimenez.netlify.app/)
 
 ## 🚀 Features
 
