@@ -38,6 +38,16 @@ body.active {
     background: var(--second-bg-color);
 }
 
+/* Preload hover images */
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../images/github-icon-hover.png) url(../images/linkedin-icon-hover.png);
+}
+
 header {
     position: fixed;
     top: 0;
