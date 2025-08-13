@@ -296,22 +296,22 @@ section.active {
 }
 
 .home-detail .btn-sci .sci .sci-github {
-    content: url(https://img.icons8.com/5b8df8/fluency-systems-filled/30/github.png);
+    content: url(../images/github-icon.png);
 }
 
 .home-detail .btn-sci .sci .sci-github:hover {
     background: var(--main-color);
-    content: url(https://img.icons8.com/1f242d/fluency-systems-filled/30/github.png);
+    content: url(../images/github-icon-hover.png);
     box-shadow: 0 0 1rem var(--main-color);
 }
 
 .home-detail .btn-sci .sci .sci-linkedin {
-    content: url(https://img.icons8.com/5b8df8/ios-filled/30/linkedin.png);
+    content: url(../images/linkedin-icon.png);
 }
 
 .home-detail .btn-sci .sci .sci-linkedin:hover {
     background: var(--main-color);
-    content: url(https://img.icons8.com/1f242d/ios-filled/30/linkedin.png);
+    content: url(../images/linkedin-icon-hover.png);
     box-shadow: 0 0 1rem var(--main-color);
 }
 
