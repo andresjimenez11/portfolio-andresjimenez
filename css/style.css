@@ -305,6 +305,11 @@ section.active {
     transition: .5s;
 }
 
+.home-detail .btn-sci .sci .sci-github,
+.home-detail .btn-sci .sci .sci-linkedin {
+    width: 46px;
+}
+
 .home-detail .btn-sci .sci .sci-github {
     content: url(../images/github-icon.png);
 }
